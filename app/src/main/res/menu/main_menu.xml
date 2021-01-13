@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/contacts"
+        android:title="Contacts" />
+    <item
+        android:id="@+id/settings"
+        android:title="Paramètres" />
+    <item
+        android:id="@+id/export"
+        android:title="Exporter les données" />
+    <item
+        android:id="@+id/share"
+        android:title="Partager" />
+    <item
+        android:id="@+id/about"
+        android:title="A propos de l'application" />
+
+
+</menu>

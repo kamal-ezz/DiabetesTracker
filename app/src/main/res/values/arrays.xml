@@ -1,0 +1,23 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="rappel">
+        <item>1h</item>
+        <item>1h30min</item>
+        <item>2h</item>
+    </string-array>
+
+    <string-array name="rappelvaleurs">
+        <item>01:00:00</item>
+        <item>01:30:00</item>
+        <item>02:00:00</item>
+    </string-array>
+
+     <string-array name="unité">
+        <item>g/l</item>
+        <item>mmol/l</item>
+        <item>mg/dl</item>
+    </string-array>
+
+    
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.p.diabetz">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BilanA1CPdf" />
+        <activity android:name=".BilanPoidsPdf" />
+        <activity android:name=".BilanTensionPdf" />
+        <activity android:name=".BilanMedicamentsPdf" />
+        <activity android:name=".BilanGlucosePdf" />
+        <activity android:name=".Export"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Parametres"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.p.diabetz.MainActivity" />
+        </activity>
+        <activity android:name=".AjouterContacts"
+            android:parentActivityName=".Contacts"/>
+        <activity
+            android:name=".Contacts"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Apropos"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Glucose"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AjouterPoids"
+            android:parentActivityName=".Poids" />
+        <activity
+            android:name=".AjouterTension"
+            android:parentActivityName=".Tension" />
+        <activity
+            android:name=".AjouterA1C"
+            android:parentActivityName=".A1C" />
+        <activity
+            android:name=".Medicaments"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Poids"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".A1C"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Tension"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AjouterMed"
+            android:parentActivityName=".Medicaments" />
+        <activity
+            android:name=".AjouterGlucose"
+            android:parentActivityName=".Glucose" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".MyBroadcastReceiver" />
+    </application>
+
+</manifest>
